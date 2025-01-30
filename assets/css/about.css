@@ -195,15 +195,22 @@
   }
   
   .profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  
+    width: 120px;
+    height: 120px;
+    object-fit: cover; 
+    object-position: top; 
+    border-radius: 50%; 
+}
+
   .profile h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #D2B66A;
+  }
+
+  .profile h6 {
+    color: #0A2463;
+    font-size: 0.9rem;
   }
   
   .profile p {
