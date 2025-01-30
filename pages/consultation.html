@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation | Alex Carter & Associates</title>
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/consultation.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/assets/img/logo.png"> <!-- Add your favicon here -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="/index.html"><img src="/assets/img/logo.png" alt="Alex Carter & Associates Logo"></a>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/about.html">About Us</a></li>
+          <li><a href="/pages/practice-areas.html">Practice Areas</a></li>
+          <li><a href="/pages/consultation.html" class="active">Consultation</a></li>
+          <li><a href="/pages/testimonials.html">Testimonials</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0);" class="dropbtn">Contact</a>
+            <div class="dropdown-content">
+              <a href="/pages/consultation.html">Contact Form</a>
+              <a href="mailto:info@yourdomain.com">Email Us</a>
+              <a href="tel:+123456789">Call Us</a>
+            </div>
+          </li>        </ul>
+
+        <!-- Burger Menu (visible only on mobile) -->
+        <div class="burger-menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Consultation Hero Section -->
+  <section class="consultation-hero">
+    <div class="container">
+      <h1>Schedule a Consultation</h1>
+      <p>Let’s discuss your legal needs and find the best solution for you.</p>
+    </div>
+  </section>
+
+  <!-- Consultation Form Section -->
+  <section class="consultation-form">
+    <div class="container">
+      <h2>Book Your Consultation</h2>
+      <form id="consultationForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Preferred Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="corporate-law">Corporate Law</option>
+            <option value="criminal-defense">Criminal Defense</option>
+            <option value="family-law">Family Law</option>
+            <option value="real-estate-law">Real Estate Law</option>
+            <option value="intellectual-property">Intellectual Property</option>
+            <option value="employment-law">Employment Law</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Additional Information</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit" class="cta-button">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>What is the cost of a consultation?</h3>
+          <p>Our initial consultation is free of charge. We’ll discuss your case and provide a clear fee structure for any further services.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How long does a consultation last?</h3>
+          <p>Consultations typically last between 30 minutes to 1 hour, depending on the complexity of your case.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What should I bring to the consultation?</h3>
+          <p>Please bring any relevant documents, such as contracts, court papers, or correspondence related to your case.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I schedule a virtual consultation?</h3>
+          <p>Yes, we offer in-person, phone, and video consultations for your convenience.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer emergency consultations?</h3>
+          <p>Yes, we provide urgent consultations if your situation requires immediate attention. Please contact us to schedule an appointment.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I schedule a consultation?</h3>
+          <p>You can schedule a consultation by calling our office, filling out the online form, or emailing us directly.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is there a fee for follow-up consultations?</h3>
+          <p>Follow-up consultations may incur a fee depending on the services provided. We’ll inform you of any costs in advance.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I get legal advice over the phone?</h3>
+          <p>Yes, we offer phone consultations for advice on legal matters.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is your policy on confidentiality?</h3>
+          <p>All information shared with us during consultations is strictly confidential and protected by attorney-client privilege.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you accept credit cards for payment?</h3>
+          <p>Yes, we accept major credit cards for payment, in addition to other forms of payment such as checks and bank transfers.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How can I cancel or reschedule a consultation?</h3>
+          <p>You can cancel or reschedule your consultation by calling us or sending an email at least 24 hours in advance.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What areas of law do you specialize in?</h3>
+          <p>We specialize in personal injury, family law, criminal defense, and business law. Please contact us for a consultation to discuss your specific legal needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Call-to-Action Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Get Started?</h2>
+      <p>Contact us today to schedule your consultation and take the first step toward resolving your legal matters.</p>
+      <a href="/pages/consultation.html" class="cta-button">Book a Consultation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="/pages/practice-areas.html">Practice Areas</a></li>
+            <li><a href="/pages/consultation.html">Consultation</a></li>
+            <li><a href="/pages/testimonials.html">Testimonials</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><strong>Address:</strong> 123 Justice Lane, Suite 456, Cityville, ST 12345</li>
+            <li><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></li>
+            <li><strong>Email:</strong> <a href="mailto:info@alexcarterlaw.com">info@alexcarterlaw.com</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="24">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="24">
+            </a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24">
+            </a>
+          </div>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="footer-section">
+          <h3>Subscribe to Our Newsletter</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright Notice -->
+      <div class="copyright">
+        <p>&copy; 2025 Alex Carter & Associates. All rights reserved.</p>
+        <p><a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-service.html">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/burger-menu.js"></script>
+  <script src="/assets/js/consultation.js"></script>
+</body>
+</html>

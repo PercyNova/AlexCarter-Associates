@@ -1,0 +1,225 @@
+/* Practice Areas Hero Section */
+.practice-hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .practice-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/img/practice.png');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(40%); /* Darkens the image */
+    z-index: -1;
+  }
+  
+  .practice-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 42, 42, 0.142); /* 60% black overlay */
+    z-index: -1;
+  }
+
+  .practice-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Call-to-Action Section */
+  .cta-section {
+    padding: 60px 0;
+    background-color: #deeeff;
+    color: white;
+    text-align: center;
+  }
+  
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0A2463;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .cta-section .cta-button {
+    background-color: #D2B66A;
+    color: #0A2463;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-section .cta-button:hover {
+    background-color: #e6b800;
+  }
+
+/* Practice Areas Grid */
+.practice-areas {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  transition: grid-template-columns 0.3s ease;
+}
+
+.practice-areas h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #0A2463;
+}
+
+
+.practice-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.practice-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.practice-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.practice-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.practice-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.practice-card .learn-more {
+  display: inline-block;
+  background-color: #D2B66A;
+  color: #0A2463;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.practice-card .learn-more:hover {
+  background-color: #e6b800;
+}
+
+/* Expanded Service Information */
+.service-info {
+  display: none; /* Hide initially */
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Expand card when clicked */
+.practice-card.expanded {
+  grid-column: span 2; /* Make the card take up more space */
+
+}
+
+/* Show service info when expanded */
+.practice-card.expanded .service-info {
+  display: block; /* Show details */
+}
+
+
+.service-info h4 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.service-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* Responsive Design for Smaller Screens */
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .practice-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .practice-card {
+    margin-bottom: 20px;
+    width: 100%; /* Ensure full width */
+  }
+
+  .practice-card.expanded {
+    width: 100%; /* Full width for better readability */
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .service-info {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #ffffff; /* Keep it visible and structured */
+    border-radius: 5px;
+    box-shadow: none;
+    display: none; /* Hide by default */
+  }
+
+  .practice-card.expanded .service-info {
+    display: block; /* Show when expanded */
+  }
+}
+
+@media (max-width: 500px) {
+  .practice-card {
+    width: 100%; /* Make sure it fits small screens */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .practice-card.expanded {
+    width: 100%; /* Ensure full width */
+  }
+
+  .service-info {
+    padding: 10px;
+  }
+}
