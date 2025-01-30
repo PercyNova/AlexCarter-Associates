@@ -27,20 +27,22 @@ body {
   /* Header */
   header {
     background-color: #0A2463;
-    padding: 20px 0;
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
   }
   
   header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
   
   header .logo img {
-    height: 4rem; /* Adjust based on your logo size */
+    height: 3rem; /* Adjust based on your logo size */
   }
   
   header nav ul {
@@ -366,7 +368,7 @@ footer {
     /* Show menu when active */
     nav ul.active {
       display: flex; /* Show menu */
-      margin-top: 6vw;
+      margin-top: 5vw;
     }
 
     nav ul {

@@ -149,8 +149,7 @@
   display: none; /* Hide initially */
   margin-top: 20px;
   background-color: #f9f9f9;
-  border-radius: 10px;
-  width: 100%;
+  width: 90%;
 }
 
 /* Expand card when clicked */
@@ -182,15 +181,16 @@
   .practice-grid {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .practice-card {
     margin-bottom: 20px;
-    width: 100%; /* Ensure full width */
+    width: 50%; /* Ensure full width */
   }
 
   .practice-card.expanded {
-    width: 100%; /* Full width for better readability */
+    width: 70%; /* Full width for better readability */
     grid-column: unset;
     grid-row: unset;
   }
@@ -200,23 +200,22 @@
     padding: 15px;
     background-color: #ffffff; /* Keep it visible and structured */
     border-radius: 5px;
-    box-shadow: none;
     display: none; /* Hide by default */
   }
 
   .practice-card.expanded .service-info {
-    display: block; /* Show when expanded */
+    display: block; 
   }
 }
 
 @media (max-width: 500px) {
   .practice-card {
-    width: 100%; /* Make sure it fits small screens */
+    width: 70%; /* Make sure it fits small screens */
     padding: 15px; /* Adjust padding */
   }
 
   .practice-card.expanded {
-    width: 100%; /* Ensure full width */
+    width: 80%; /* Ensure full width */
   }
 
   .service-info {
